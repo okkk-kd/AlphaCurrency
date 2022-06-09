@@ -1,0 +1,4 @@
+feign:
+  get:
+    baseUrl: https://openexchangerates.org/api/
+  id: ?app_id=8e0da00540074e68958b05c1f86a3d41
