@@ -27,7 +27,7 @@ public class FeignExchangeServiceImpl implements FeignExchangeService {
     }
     @Override
     public String getCurrencyByCodeHistorical(String code) throws JSONException {
-        final String date = LocalDate.now().minusDays(3).toString();
+        final String date = LocalDate.now().minusDays(1).toString();
         String url = "https://openexchangerates.org/api/" + "historical/" + date + ".json" + "?app_id=8e0da00540074e68958b05c1f86a3d41";
         RestTemplate restTemplate = new RestTemplate();
         GsonParser parser = new GsonParser();
